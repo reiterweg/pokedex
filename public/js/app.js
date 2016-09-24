@@ -1,4 +1,5 @@
 (function() {
+
   var app = angular.module('pokedex', []);
 
   app.controller('PokemonController', function() {
@@ -30,4 +31,11 @@
       this.tab = tab;
     };
   });
+
+  app.filter('imageify', function() {
+    return function(input) {
+      return "img/pokemons/" + input.toLowerCase() + ".jpg";
+    };
+  });
+
 })();
