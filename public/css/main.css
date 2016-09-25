@@ -26,6 +26,10 @@ body {
   margin-bottom: 10px;
 }
 
+.form-group {
+  padding: 10px;
+}
+
 .type {
   margin-left: 1 px;
 }
