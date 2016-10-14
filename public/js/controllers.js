@@ -7,8 +7,8 @@
           $scope.pokemons = data;
         });
     }])
-    .controller('PokemonController', function() {
-      this.pokemon = {
+    .controller('PokemonController', ['$scope', function($scope) {
+      $scope.pokemon = {
        id: "001",
        name: "Bulbasaur",
        species: "Seed Pokémon",
@@ -27,7 +27,7 @@
        },
        evolution: [ "Bulbasaur", "Ivysaur", "Venusaur" ]
       };
-    })
+    }])
     .controller('TabsController', function() {
       this.tab = 1;
   
