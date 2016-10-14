@@ -3,10 +3,7 @@
     <h1>Pok&eacute;dex</h1>
   </div>
   <div ng-repeat="pokemon in pokemons">
-    <h1>{{ pokemon.name }}</h1>
-    <h1>
-      <small>{{ pokemon.species }}</small>
-    </h1>
-    <img ng-src="{{ pokemon.name | imageify }}">
+    <pokemon-name></pokemon-name>
+    <pokemon-image></pokemon-image>
   </div>
 </div>
