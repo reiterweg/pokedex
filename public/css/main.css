@@ -132,3 +132,17 @@ body {
   border: solid 1px #9b6470;
 }
 
+.pokemon {
+  padding: 20px;
+  margin-bottom: 10px;
+  border: solid 1px #d9230f;
+  border-radius: 20px;
+}
+
+.pokemon hover {
+  border: solid 3px #d9230f;
+}
+
+.pokemon img {
+  width: 300px;
+}
