@@ -3,6 +3,10 @@
   angular.module('pokedex.filters', [])
     .filter('normalize', function() {
       return function(input) {
+        if (!input) {
+          return "";
+        }
+
         return input
           .replace('♀', 'f')
           .replace('♂', 'm')
