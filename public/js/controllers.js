@@ -5,10 +5,11 @@
         $scope.pokemons = data;
       });
     }])
-    .controller('PokemonController', ['$scope', 'pokemonService', function($scope, pokemonService) {
+    .controller('PokemonController', ['$scope', '$routeParams', 'pokemonService', function($scope, $routeParams, pokemonService) {
       $scope.pokemon = {};
+      var name = $routeParams.name;
 
-      pokemonService.byName('bulbasaur')
+      pokemonService.byName(name)
         .then(function(data) {
           $scope.pokemon = data;
         });
