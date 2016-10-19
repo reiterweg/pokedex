@@ -31,6 +31,12 @@
         templateUrl: 'partials/pokemon-evolution.html'
       };
     })
+    .directive('pokemonType', function() {
+      return {
+        restrict: 'E',
+        templateUrl: 'partials/pokemon-type.html'
+      };
+    })
     .directive('pokemonComments', function() {
       return {
         restrict: 'E',
