@@ -74,7 +74,7 @@ body {
 
 .type-poison {
   background-color: #a040a0;
-  border: solid 1px #c183c1;
+  border: solid 1px #692a69;
 }
 
 .type-electric {
@@ -127,7 +127,7 @@ body {
   border: solid 1px #787887;
 }
 
-.type-faity {
+.type-fairy {
   background-color: #ee99ac;
   border: solid 1px #9b6470;
 }
@@ -165,4 +165,3 @@ body {
   position: relative;
   height: 250px;
 }
-
